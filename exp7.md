@@ -33,11 +33,11 @@ It contains **chemical properties** of wine and their corresponding **quality ra
 ## code
 ### Import necessary libraries
 import pandas as pd
-</br>
+<br>
 import numpy as np
-</br>
+<br>
 import seaborn as sns
-</br>
+<br>
 import matplotlib.pyplot as plt
 
 ### Load dataset (example: UCI Wine Quality dataset)
@@ -48,20 +48,20 @@ corr_matrix = df.corr()
 
 ### Plot heatmap of correlation matrix
 plt.figure(figsize=(10, 6))
-</br>
+<br>
 sns.heatmap(corr_matrix, annot=True, cmap='coolwarm', fmt=".2f")
-</br>
+<br>
 plt.title("Feature Correlation Heatmap")
-</br>
+<br>
 plt.show()
 
 ### Select features with high correlation (above a threshold)
 correlation_threshold = 0.3
-</br>
+<br>
 target_variable = 'quality'
-</br>
+<br>
 correlated_features = corr_matrix[target_variable][abs(corr_matrix[target_variable]) > correlation_threshold].index.tolist()
-</br>
+<br>
 correlated_features.remove(target_variable)
 
 ### Display selected features
@@ -69,7 +69,7 @@ print("Selected features based on correlation:", correlated_features)
 
 ### Create new dataframe with selected features
 filtered_df = df[correlated_features + [target_variable]]
-</br>
+<br>
 print("\nShape of filtered dataset:", filtered_df.shape)
 
 
