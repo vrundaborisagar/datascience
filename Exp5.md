@@ -12,7 +12,7 @@ import seaborn as sns
 from sklearn.model_selection import train_test_split
 
 ## 2. Read the dataset 
-df = pd.read_csv(r'C:\Users\paras\OneDrive\Desktop\Vs Code\Python\irisdata.csv', header=None)
+df = pd.read_csv('/content/drive/MyDrive/iris.data', header=None)
 print(df.head())
 
 ### Assign column names (dataset doesnt have header)
