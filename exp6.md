@@ -59,3 +59,16 @@ plt.figure(figsize=(8, 6))
 sns.heatmap(df.drop(columns=['species']).corr(), annot=True, cmap="coolwarm", linewidths=0.5)
 plt.title("Feature Correlation Heatmap")
 plt.show()
+```
+### Output:
+
+```
+Sepal Length  Sepal Width  Petal Length  Petal Width      Species
+0           5.1          3.5           1.4          0.2  Iris-setosa
+1           4.9          3.0           1.4          0.2  Iris-setosa
+2           4.7          3.2           1.3          0.2  Iris-setosa
+3           4.6          3.1           1.5          0.2  Iris-setosa
+4           5.0          3.6           1.4          0.2  Iris-setosa
+```
+![download (5)](https://github.com/user-attachments/assets/26204a3c-a667-4150-9a47-486dfe019b45)
+![download (6)](https://github.com/user-attachments/assets/acbc78a4-933b-4ae0-a422-fd2257ff68c8)
