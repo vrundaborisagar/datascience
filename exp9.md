@@ -18,28 +18,39 @@ In this project, **Logistic Regression** is used as the base model for RFE to de
 # Code  
 
 ## Import necessary libraries </br>
+```
 import pandas as pd </br>
 from sklearn.feature_selection import RFE </br>
 from sklearn.linear_model import LogisticRegression </br>
 from sklearn.model_selection import train_test_split </br>
-
-## Load dataset </br>
-df = pd.read_csv('/content/drive/MyDrive/Datasets/winequality-red.csv', delimiter=';') </br>
+```
+## Load dataset 
+```
+df = pd.read_csv('/content/drive/MyDrive/Datasets/winequality-red.csv', delimiter=';') 
+```
 
 ## Separate features and target variable </br>
-X = df.drop(columns=['quality']) </br>
-y = df['quality'] </br>
+```
+X = df.drop(columns=['quality']) 
+y = df['quality'] 
+```
 
-## Split data into training and testing sets </br>
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42) </br>
-
-## Initialize logistic regression model </br>
-model = LogisticRegression(max_iter=5000) </br>  # Increased max_iter to ensure convergence </br>
-
-## Apply RFE (Recursive Feature Elimination) to select top 5 features </br>
-rfe = RFE(estimator=model, n_features_to_select=5) </br>
-X_selected = rfe.fit_transform(X_train, y_train) </br>
-
-## Get selected feature names </br>
-selected_features = X.columns[rfe.support_] </br>
-print("Selected Features using RFE:", selected_features.tolist()) </br>
+## Split data into training and testing sets 
+```
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42) 
+```
+## Initialize logistic regression model 
+```
+model = LogisticRegression(max_iter=5000) 
+```
+# Increased max_iter to ensure convergence
+```
+## Apply RFE (Recursive Feature Elimination) to select top 5 features
+rfe = RFE(estimator=model, n_features_to_select=5) 
+X_selected = rfe.fit_transform(X_train, y_train)
+```
+## Get selected feature names
+```
+selected_features = X.columns[rfe.support_] 
+print("Selected Features using RFE:", selected_features.tolist()) 
+```
