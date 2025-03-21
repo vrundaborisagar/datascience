@@ -29,34 +29,32 @@ It contains **chemical properties** of wine and their corresponding **quality ra
    - Selects the **top K features** with the highest dependency on the target.
 
 # code
-
 ### Import necessary libraries
+```
 import pandas as pd
-</br>
 from sklearn.feature_selection import SelectKBest, chi2
-
+```
 ### Load dataset
+```
 df = pd.read_csv('/content/drive/MyDrive/Datasets/winequality-red.csv', delimiter=';')
-
+```
 ### Separate features and target variable
+```
 X = df.drop(columns=['quality'])
-</br>
 y = df['quality']
-
+```
 ### Apply SelectKBest with Chi-Square Test
+```
 k = 5  # Select top 5 features
-</br>
 chi_selector = SelectKBest(score_func=chi2, k=k)
-</br>
 X_selected = chi_selector.fit_transform(X, y)
-
+```
 ### Get selected feature names
+```
 selected_feature_indices = chi_selector.get_support(indices=True)
-</br>
 selected_features = X.columns[selected_feature_indices]
-</br>
 print("Top", k, "selected features using Chi-Square Test:", selected_features.tolist())
-
+```
 ## **Installation**
 To run the code, install the required libraries:
 ```bash
