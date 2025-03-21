@@ -31,7 +31,7 @@ It contains **chemical properties** of wine and their corresponding **quality ra
    - Removes features that have a low impact on wine quality.
 
 ## code
-```
+
 ### Import necessary libraries
 import pandas as pd
 <br>
