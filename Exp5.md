@@ -1,3 +1,4 @@
+
 # Experiment 5- Plotting Techniques 
 ## 1. Import necessary libraries
 import pandas as pd
@@ -60,3 +61,8 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 
 print("\nTraining set shape:", X_train.shape)
 print("Test set shape:", X_test.shape)
+### Output:
+![download (3)](https://github.com/user-attachments/assets/ef627e22-4232-42ef-88bf-3a639a4c9f48)
+![download (2)](https://github.com/user-attachments/assets/66d2778a-74c4-440d-b85c-f2d9f126d432)
+![download (4)](https://github.com/user-attachments/assets/40991187-dbfa-4870-a109-aa3febd98746)
+![download (1)](https://github.com/user-attachments/assets/9737d699-6262-457c-a51a-256b4e8b1f06)
