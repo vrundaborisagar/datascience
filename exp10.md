@@ -10,7 +10,7 @@ The dataset used is **Wine Quality Dataset** from UCI ML Repository, containing 
 To run this project, ensure you have Python installed along with the required dependencies.
 
 ## code
-```
+
 ### Import necessary libraries <br>
 import pandas as pd <br>
 from sklearn.feature_selection import RFECV <br>
