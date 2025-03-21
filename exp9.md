@@ -16,7 +16,7 @@ In this project, **Logistic Regression** is used as the base model for RFE to de
 4. The script will output the **top 5 selected features**.  
 
 # Code  
-```
+
 ## Import necessary libraries </br>
 import pandas as pd </br>
 from sklearn.feature_selection import RFE </br>
