@@ -29,7 +29,7 @@ It contains **chemical properties** of wine and their corresponding **quality ra
    - Selects the **top K features** with the highest dependency on the target.
 
 # code
-```
+
 ### Import necessary libraries
 import pandas as pd
 </br>
