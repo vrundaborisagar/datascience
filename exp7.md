@@ -71,6 +71,7 @@ filtered_df = df[correlated_features + [target_variable]]
 print("\nShape of filtered dataset:", filtered_df.shape)
 ```
 ##output
+
 ![exp7](https://github.com/user-attachments/assets/dfb2f361-bfbf-48cb-8b5c-3336804431f4)
 
 ```
