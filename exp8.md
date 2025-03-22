@@ -55,6 +55,11 @@ selected_feature_indices = chi_selector.get_support(indices=True)
 selected_features = X.columns[selected_feature_indices]
 print("Top", k, "selected features using Chi-Square Test:", selected_features.tolist())
 ```
+
+##output
+```
+Top 5 selected features using Chi-Square Test: ['volatile acidity', 'citric acid', 'free sulfur dioxide', 'total sulfur dioxide', 'alcohol']
+```
 ## **Installation**
 To run the code, install the required libraries:
 ```bash
