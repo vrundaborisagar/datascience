@@ -54,3 +54,7 @@ X_selected = rfe.fit_transform(X_train, y_train)
 selected_features = X.columns[rfe.support_] 
 print("Selected Features using RFE:", selected_features.tolist()) 
 ```
+## OUTPUT
+```
+Selected Features using RFE: ['volatile acidity', 'chlorides', 'total sulfur dioxide', 'sulphates', 'alcohol']
+```
