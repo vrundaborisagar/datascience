@@ -52,3 +52,8 @@ selected_features = X.columns[rfecv.support_]
 print("Optimal number of features:", rfecv.n_features_) 
 print("Selected Features using RFECV:", selected_features.tolist())
 ```
+### Output
+```
+Optimal number of features: 6
+Selected Features: ['volatile acidity', 'chlorides', 'total sulfur dioxide', 'density', 'sulphates', 'alcohol']
+```
