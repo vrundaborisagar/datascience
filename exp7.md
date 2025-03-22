@@ -73,6 +73,9 @@ print("\nShape of filtered dataset:", filtered_df.shape)
 ##output
 
 ![exp7](https://github.com/user-attachments/assets/dfb2f361-bfbf-48cb-8b5c-3336804431f4)
+Selected features based on correlation: ['volatile acidity', 'alcohol']
+
+Shape of filtered dataset: (1599, 3)
 
 ```
 ## **Installation**
