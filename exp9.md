@@ -19,10 +19,10 @@ In this project, **Logistic Regression** is used as the base model for RFE to de
 
 ## Import necessary libraries </br>
 ```
-import pandas as pd </br>
-from sklearn.feature_selection import RFE </br>
-from sklearn.linear_model import LogisticRegression </br>
-from sklearn.model_selection import train_test_split </br>
+import pandas as pd 
+from sklearn.feature_selection import RFE 
+from sklearn.linear_model import LogisticRegression 
+from sklearn.model_selection import train_test_split 
 ```
 ## Load dataset 
 ```
