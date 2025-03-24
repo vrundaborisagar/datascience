@@ -56,7 +56,7 @@ selected_features = X.columns[selected_feature_indices]
 print("Top", k, "selected features using Chi-Square Test:", selected_features.tolist())
 ```
 
-##output
+## output
 ```
 Top 5 selected features using Chi-Square Test: ['volatile acidity', 'citric acid', 'free sulfur dioxide', 'total sulfur dioxide', 'alcohol']
 ```
