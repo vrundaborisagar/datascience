@@ -60,7 +60,3 @@ print("Top", k, "selected features using Chi-Square Test:", selected_features.to
 ```
 Top 5 selected features using Chi-Square Test: ['volatile acidity', 'citric acid', 'free sulfur dioxide', 'total sulfur dioxide', 'alcohol']
 ```
-## **Installation**
-To run the code, install the required libraries:
-```bash
-pip install pandas scikit-learn
