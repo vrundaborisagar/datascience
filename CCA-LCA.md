@@ -765,6 +765,7 @@ Confusion Matrix:
 ### Feature Importance
 - Extracted from meta-model coefficients (Logistic Regression)
 - Top 20 features visualized using a horizontal bar chart
+![file](https://github.com/user-attachments/assets/8fb4efc6-21af-4034-926f-e05bdb8d2e5c)
 
 ---
 
