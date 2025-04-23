@@ -350,7 +350,7 @@ print(f"Top 10 correlated features: {selected_corr}")
 ~~~
 
 **What it does:**  
-Calculates the **Pearson correlation coefficient** between each feature and the target. The top 10 features with the highest absolute correlation are selected.
+This part of the code finds the top 10 features in X that are most strongly related to the target variable y. These features are selected based on their absolute correlation values.
 
 ---  
 These filter methods are:
