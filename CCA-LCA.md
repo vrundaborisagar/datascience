@@ -10,10 +10,48 @@ We begin by installing the required libraries:
 - `scikit-learn`: For machine learning models, preprocessing, and evaluation.
 - `pandas`, `numpy`: For data manipulation.
 - `matplotlib`, `seaborn`: For data visualization.
- 
+
+ ## important library
+- **Pandas** and **NumPy** for data manipulation
+- **Matplotlib** and **Seaborn** for data visualization
+- **Scikit-learn** for machine learning tasks:
+  - Preprocessing (LabelEncoder, MinMaxScaler, OrdinalEncoder)
+  - Model selection and training (RandomForest, GradientBoosting)
+  - Feature selection (SelectKBest, RFE, SequentialFeatureSelector)
+  - Evaluation (classification report, confusion matrix)
+- **Category Encoders** for encoding categorical variables:
+  - Target Encoding
+  - Binary Encoding
+  - One-hot Encoding
+  - Frequency (Count) Encoding
+- **ZipFile** for extracting zipped datasets
+- **Warnings** to suppress warnings during execution
+  
+~~~python
+import pandas as pd
+import numpy as np
+from zipfile import ZipFile
+import matplotlib.pyplot as plt
+import seaborn as sns
+from sklearn.preprocessing import LabelEncoder, MinMaxScaler, OrdinalEncoder
+from sklearn.model_selection import train_test_split
+from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
+from sklearn.feature_selection import (SelectKBest, mutual_info_classif,
+                                     VarianceThreshold, RFE, SequentialFeatureSelector)
+from sklearn.metrics import classification_report, confusion_matrix, ConfusionMatrixDisplay
+from category_encoders import TargetEncoder, BinaryEncoder, OneHotEncoder, CountEncoder
+import warnings
+warnings.filterwarnings('ignore')
+~~~
+---
+
  ## Unique Random Seed for Reproducibility
 Set a unique random seed to ensure the results are reproducible across runs.
-
+~~~python
+RANDOM_SEED = 42
+np.random.seed(RANDOM_SEED)
+~~~
+---
   ## Load and Merge the BoT-IoT Dataset
 The dataset is loaded from a zip file containing CSV files. All files are read and merged into a single DataFrame. Error handling is implemented to manage potential issues like missing files.
 - `CSV files are extracted from the zip archive.`
@@ -50,6 +88,7 @@ def load_bot_iot_data():
         return pd.DataFrame()  # Return empty DataFrame on error
 
 df = load_bot_iot_data()
+
 ~~~
 ---
 ## Data Preprocessing - Cleaning
