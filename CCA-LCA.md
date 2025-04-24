@@ -292,6 +292,8 @@ Draws boxplots with overlaid strip plots to show distributions and outliers for 
   
 All of which directly influence the choice of algorithms, evaluation metrics, and preprocessing steps in later stages.
 
+---
+
 ## 6. Feature Selection - Filter Methods
 
 In this step, we apply **filter-based feature selection** techniques to reduce dimensionality and improve model performance. Filter methods assess the importance of features using statistical measures without involving any learning algorithm.
